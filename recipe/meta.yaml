@@ -23,6 +23,7 @@ requirements:
     - sphinx >=3.2.0
     - beautifulsoup4
     - dataclasses
+    - docutils
 
 test:
   imports:
