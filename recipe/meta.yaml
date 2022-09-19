@@ -1,5 +1,5 @@
 {% set name = "sphinx-codeautolink" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-codeautolink-{{ version }}.tar.gz
-  sha256: 9eabd4dfa0cf4dcb94020506f9ea1ede0f952a54e2704b70573a643c0f327aac
+  sha256: cd402b1105c9d46ce632874698dd1d3e7cde966fdcc0ebe88b9754aa5a38ff57
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - sphinx >=3.2.0
     - beautifulsoup4
     - dataclasses
+    - docutils
 
 test:
   imports:
