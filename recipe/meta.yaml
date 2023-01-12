@@ -16,14 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
     - python >=3.6
     - sphinx >=3.2.0
-    - beautifulsoup4
+    - beautifulsoup4 >=4.8.1
     - dataclasses
-    - docutils
 
 test:
   imports:
