@@ -1,5 +1,5 @@
 {% set name = "sphinx-codeautolink" %}
-{% set version = "0.13.2" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-codeautolink-{{ version }}.tar.gz
-  sha256: 020933a0a001b31996bcbdd9e77ae25b2122cb025e077a6326888d3fe72b7201
+  sha256: 7d61dea15498926b903df2db0bc81fc45760e2104a37d4d2ae970b244b22839f
 
 build:
   number: 0
