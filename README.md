@@ -1,11 +1,11 @@
-About sphinx-codeautolink
-=========================
+About sphinx-codeautolink-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-codeautolink-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/sphinx-codeautolink
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-codeautolink-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatic links from code examples to reference documentation.
 
