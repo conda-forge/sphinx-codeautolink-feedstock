@@ -153,5 +153,5 @@ Feedstock Maintainers
 =====================
 
 * [@Zeitsperre](https://github.com/Zeitsperre/)
-* [@conda-forge/sphinx](https://github.com/conda-forge/sphinx/)
+* [@conda-forge/sphinx](https://github.com/orgs/conda-forge/teams/sphinx/)
 
