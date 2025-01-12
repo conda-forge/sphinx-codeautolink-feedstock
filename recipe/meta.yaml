@@ -1,5 +1,6 @@
+{% set python_min = "3.10" %}
 {% set name = "sphinx-codeautolink" %}
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 93963a05f17642c8892b06932e013af62c1041a4949524c810dbc5ae8b3ff16d
+  sha256: 840a08393d81ad5be2a76a0c452658008e3205645291ee9f33092518bda4e279
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
