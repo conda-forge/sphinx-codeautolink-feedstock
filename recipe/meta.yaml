@@ -27,15 +27,22 @@ requirements:
     - beautifulsoup4 >=4.8.1
     - dataclasses
     - docutils
+  run_constrained:
+    - ipython !=8.7.0
 
 test:
   imports:
     - sphinx_codeautolink
   commands:
     - pip check
+    - pytest tests
   requires:
+    - coverage >=5.0
     - pip
+    - pytest >=6.0
     - python {{ python_min }}
+  source_files:
+    - tests
 
 about:
   home: https://pypi.org/project/sphinx-codeautolink
