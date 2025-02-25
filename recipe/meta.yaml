@@ -35,13 +35,14 @@ test:
     - sphinx_codeautolink
   commands:
     - pip check
-    - pytest tests
+    - pytest
   requires:
     - coverage >=5.0
     - pip
     - pytest >=6.0
     - python {{ python_min }}
   source_files:
+    - pyproject.toml
     - tests
 
 about:
