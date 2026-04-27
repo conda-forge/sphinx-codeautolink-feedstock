@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "sphinx-codeautolink" %}
-{% set version = "0.17.5" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 75098c20aa32de01481fa62409e6d2fbfdde760e6696ae9beb233a77bcb49283
+  sha256: f7f7e3b7bdc55132f1967735321ddd1584a710be49f84de299d094d8ba8babee
 
 build:
   number: 0
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61.0
+    - setuptools >=77.0
     - pip
     - wheel
   run:
@@ -35,7 +35,6 @@ test:
     - pip check
     - pytest -k "not test_references"  # fails on Azure CI
   requires:
-    - coverage >=5.0
     - pip
     - pytest >=6.0
     - python {{ python_min }}
