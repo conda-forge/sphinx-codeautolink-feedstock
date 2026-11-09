@@ -1,0 +1,61 @@
+schema_version: 1
+
+context:
+  version: "0.20.0"
+
+package:
+  name: sphinx-codeautolink
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/s/sphinx-codeautolink/sphinx_codeautolink-${{ version }}.tar.gz
+  sha256: d135b4cc33d79f886df259b31b89d3d124cf2c66246f4a551b2a5a018cf7d638
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=77.0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - sphinx >=3.2.0
+    - beautifulsoup4 >=4.8.1
+  run_constraints:
+    - ipython !=8.7.0
+
+tests:
+  - python:
+      imports:
+        - sphinx_codeautolink
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+  - files:
+      source:
+        - pyproject.toml
+        - tests
+    requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pytest >=6.0
+    script:
+        # test_references fails on Azure CI.
+        - pytest -k "not test_references"
+
+about:
+  summary: Automatic links from code examples to reference documentation.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://pypi.org/project/sphinx-codeautolink/
+  repository: https://github.com/felix-hilden/sphinx-codeautolink
+
+extra:
+  recipe-maintainers:
+    - conda-forge/sphinx
+    - Zeitsperre
