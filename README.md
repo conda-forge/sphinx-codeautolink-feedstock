@@ -3,20 +3,13 @@ About sphinx-codeautolink-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-codeautolink-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/sphinx-codeautolink
+Home: https://pypi.org/project/sphinx-codeautolink/
 
 Package license: MIT
 
 Summary: Automatic links from code examples to reference documentation.
 
 Development: https://github.com/felix-hilden/sphinx-codeautolink
-
-Documentation: https://sphinx-codeautolink.readthedocs.io/en/latest/
-
-sphinx-codeautolink makes code examples clickable by inserting links
-from individual code elements to the corresponding reference documentation.
-We aim for a minimal setup assuming your examples are already valid Python.
-
 
 Current build status
 ====================
